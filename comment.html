@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>comment</title>
+</head>
+<style>
+
+body{
+        background-color: rgba(93, 204, 204, 0.774);
+    }
+    
+.comment{
+  height: 550px;
+  width: 600px;
+  background-color: teal;
+  justify-content: center;
+  align-items: center;
+ margin-left: 650px;
+ box-shadow: 4px 4px 15px rgb(0, 0, 0);
+ border-radius: 20px;
+ margin-top: 200px;
+}
+
+.text-name{
+  background-color: rgb(201, 201, 201);
+  width: 540px;
+  height: 50px;
+margin-left: 20px;
+  
+  margin-top: 40px;
+   border: 1px solid rgb(255, 255, 255);
+  padding-left: 20px;
+
+}
+
+
+.type-email{
+  background-color: rgb(201, 201, 201);
+  width: 540px;
+  height: 50px;
+margin-left: 20px;
+ 
+  margin-top: 10px;
+   border: 1px solid rgb(255, 255, 255);
+  
+  padding-left: 20px;
+}
+
+.type-message{
+  background-color: rgb(162, 192, 191);
+  width: 540px;
+  height: 140px;
+margin-left: 20px;
+  margin-top: 30px;
+   border: 1px solid rgb(255, 255, 255);
+   padding-left: 20px;
+   padding-top: 20px;
+}
+
+.send-button{
+  width: 560px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 30px ;
+  background-color: rgb(8, 158, 133);
+  color: white;
+   border: 1px solid rgb(255, 255, 255);
+
+}
+</style>
+<body>
+    
+
+<div class="comment">
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+      <p style="margin-left: 40px; font-weight: bold; font-size: 30px; margin-top: 80px;"> Let's Connect!</p>
+
+      <input class="text-name" type="text" name="name" placeholder="Name" required><br>
+
+      <input class="type-email" type="email" name="email" placeholder="Your Email" required><br>
+
+      <textarea  class="type-message" name="message" placeholder="your comment" required></textarea>
+
+      <button class="send-button" type="submit">Send</button>
+      </form>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
